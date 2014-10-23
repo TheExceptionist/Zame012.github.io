@@ -1,34 +1,1318 @@
- .event-calendar .event-empty {
-    height: 50px;
-} 
-.event-calendar td {
-    border: 1px solid #658017;
-    text-align: right;
-    vertical-align: top;
-    margin: 0;
-    padding: 0;
-    width: 100px;
+ body {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
 }
+
+/* Default link behavior */
+a:link, a:active, a:visited, li a.active {
+  color: #000000;
+  border-bottom: 1px dotted #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #658017;
+  background-color: none;
+  border-bottom: 1px dashed #658017;
+}
+
+/* ================================================================
+   sIFR
+   ================================================================ */
+/* These are standard sIFR styles... do not modify */
+
+.sIFR-flash {
+  visibility: visible !important;
+  margin: 0;
+}
+
+.sIFR-replaced {
+  visibility: visible !important;
+}
+span.sIFR-alternate {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+/* Hide Adblock Object tab: the text should show up just fine, not poorly with a tab laid over it. */
+.sIFR-flash + div[adblocktab=true] {
+  display: none !important;
+}
+
+/* ================================================================
+   DRUPAL BASICS
+   ================================================================ */
+.messages  {
+  background: #fff;
+  border: 1px solid #6e2;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.clear, .clearit {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.book-navigation .page-links {
+  margin: 10px 0 0 0 ;
+}
+
+.breadcrumb {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 14px;
+}
+.breadcrumb a:link,
+.breadcrumb a:active,
+.breadcrumb a:visited {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 14px;
+  color: #658017;
+  border-bottom: 1px dotted #658017;
+}
+.breadcrumb a:hover {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 14px;
+  color: #658017;
+  border-bottom: 1px dashed #658017;
+  background-color: none;
+}
+
+.resizable-textarea {
+  margin-bottom: 10px;
+}
+
+#pager {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #AFAFAF;
+  background-color: #EFEFEF;
+}
+.pager-list {
+  margin: 0;
+  padding: 0;
+}
+.pager-list .pager-next,
+.pager-list .pager-previous,
+.pager-list .pager-first,
+.pager-list .pager-last {
+  margin: 0 7px 0 0;
+  padding: 0;
+}
+.pager-current {
+  margin: 0 7px 0 0;
+  padding: 0;
+  color: red;
+  border: 0;
+  background-color: #DFDFDF;
+  border: 1px solid #8F8F8F;
+}
+
+#pager a {
+  border: 0;
+}
+
+.comment {
+  background-color: #FFFFFF;
+  margin: 1em 50px 0 10px;
+}
+.comment .title {
+  padding: 2px;
+  font-weight: bold;
+  background-color: #EFEFEF;
+  font-size: 110%;
+}
+.comment .content {
+}
+.comment .author {
+  text-align: right;
+  font-size: 80%;
+}
+
+/* ================================================================
+   SOAR FIXES
+   ================================================================ */
+
+.themename {
+  font-weight: bold;
+}
+.themedesc {
+  font-size: 12px;
+}
+
+/* even height of Admin/Account fieldsets */
+#sacct_cp fieldset {
+  min-height: 90px;
+}
+#smail_cp fieldset {
+  min-height: 90px;
+}
+
+/* remove large space at top of Online Help pages */
+/*
+.node em {
+  display: none;
+}
+*/
+
+/* Fixes page content now showing up until selected when near a float */
+.page-content {
+ margin: 5px 0 0 0 ;
+ min-height: 1px;
+}
+ 
+/* Removes link effects from images in TinyMCE editor */
+.mceEditor a {
+  border: none;
+  text-decoration: none;
+}
+
+/* Don't use underlines for images */
+.photos a,
+.album-ilink a,
+.eventlinks a {
+  border: none;
+}
+
+/* Make sure text area starts out large enough */
+.form-textarea {
+  min-height: 300px;
+}
+
+/* for the demo sites */
+.demo {
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 110%;
+  background: yellow;
+  border: 1px solid black;
+}
+
+/* Email Lists
+ * Remove link underlines
+ * make rows smaller */
+.emailmemlist a {
+  border: 0;
+}
+.emailmemlist table td {
+  font-size: 85%;
+}
+
+#soar_manage_member td,
+#soar_menu_userdelete_confirm,
+#soar_menu_userdelete .form-item,
+#smail_form_eblast_uexclude td,
+#smail_form_list_gauth td,
+#smail_form_list_auth_add td,
+#smail_form_list_auth_del td,
+#smail_form_list_mem_del td,
+#smail_form_list_mem_add td {
+  font-size: 85%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Control Panels
+ * Remove link underlines */
+#sacct_cp a,
+#sroster_panel_import a,
+#smail_cp a,
+#sroster_panel_member a,
+#soar_cp_admin a,
+#stheme_cpanel a,
+#stheme_menu_themecust a,
+#soar_cp_content a {
+  border: 0;
+}
+
+/* Remove box around Subunit Select boxes */
+.subunit_select {
+  border: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+/* ================================================================
+   MINIMUM SCREEN WIDTH SETUP
+   ================================================================ */
+
+.background {
+  padding-left: 7px;
+  background-color: #FFFFFF;
+  background-image: url();
+}
+
+/*
+.width {
+  width: 99%;
+  min-width: 900px;
+}
+
+* html .minwidth {
+  float: left;
+  border-left: 900px; 
+  position: relative;
+  z-index: 1;
+}
+
+* html .mincontainer {
+  float: left;
+  margin-left: -900px;
+  position: relative;
+  z-index: 2;
+}
+*/
+
+/* ================================================================
+   DRUPAL CONTAINER
+   All content is within this object
+   ================================================================ */
+#container {
+  position: relative;
+/*
+  border-left: 1px solid #003399;
+  border-right: 1px solid #003399;
+  border-bottom: 1px solid #003399;
+*/
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* ================================================================
+   PAGE HEADER
+   ================================================================ */
+#header {
+  background-color: #CCCC99;
+  height: 110px;
+/*
+  border-bottom: 4px solid #658017;
+  border-top: 3px solid #658017;
+*/
+}
+#headertop {
+  background-color: #658017;
+  height: 3px;
+}
+#headerbottom {
+  background-color: #658017;
+  height: 4px;
+}
+
+#headpicleft {
+  position: absolute; top: 9px; left: 10px;
+  margin: 0 10px 0 0;
+  padding: 0;
+  float: left;
+  overflow: hidden;
+}
+#headpicright {
+  position: absolute; top: 9px; right: 20px;
+  margin: 0 0 0 10px;
+  padding: 0;
+  float: right;
+  overflow: hidden;
+}
+.headpicleftimage,
+.headpicrightimage {
+  max-height: 100px;
+}
+
+
+#headtitle {
+  padding: 0 200px 0 200px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 28px;
+  font-variant: small-caps;
+  color: #658017;
+  background-color: #CCCC99;
+}
+
+/* ================================================================
+   LEFT COLUMN
+   ================================================================ */
+#colleft {
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFFFFF;
+  height: 500px;
+}
+#colleft .block .content {
+  background-color: #FFFFFF;
+}
+
+/* block defualts */
+.block {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.block .content {
+  padding: 6px 0px 6px 0;
+}
+
+#colleft .block {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Georgia;
+  color: #658017;
+}
+
+.block .title {
+  margin: 0;
+  padding: 2px 0 2px 0;
+  width: 100%;
+}
+
+#colleft .block .title {
+  background-color: #658017;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: Georgia;
+}
+
+
+/* login block */
+.block-logintoboggan {
+  font-weight: bold;
+}
+.user-login-block .form-item label {
+  font-weight: normal;
+}
+/* user block */
+.block-menu .soar-checkout {
+  text-align: center;
+  margin: 7px 0 0 0;
+  padding: 0;
+}
+
+/* menu blocks */
+.block-menu ul {
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+.block-menu li {
+  line-height: 140%;
+  margin: 0;
+  padding: 0 0 0 10px;
+  text-indent: -10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.block-menu ul li a,
+.block-menu ul li a:link,
+.block-menu ul li a:active,
+.block-menu ul li a:visited {
+  display: block;
+  color: #658017;
+  margin: 0;
+  padding: 0 0 0 10px;
+  border: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.block-menu .menudisabled {
+  padding: 0 0 0 10px;
+  color: #808080;
+}
+.block-menu ul li a:hover {
+  display: block;
+  background-color: #CCCC99;
+  color: #658017;
+}
+
+#block-soar-3 .form-item {
+  padding: 0;
+  margin: 0;
+}
+#block-soar-3 .form-submit {
+  width: 100%;
+  margin: 6px auto 0 auto;
+}
+#block-soar-3 .content {
+  font-size: 90%;
+}
+  
+
+/* SOAR marketing */
+.soarlink {
+  font-family: Tahoma;
+  font-weight: normal;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  line-height: 18px;
+}
+.soarlink a {
+  font-weight: bold;
+  color: blue;
+}
+
+/* ================================================================
+   RIGHT COLUMN
+   ================================================================ */
+#colright {
+  background-color: none;
+}
+
+#colright .block {
+  padding-top: 10px;
+}
+#colright .block .title {
+  text-align: left;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 16px;
+  font-variant: small-caps;
+  color: #000000;
+  background-color: #CCCC99;
+  border-top: 1px solid #658017;
+/*
+  border-bottom: 1px solid black;
+*/
+  padding: 3px 0 3px 5px;
+}
+
+#colright .block .content {
+  padding: 0;
+  font-family: Tahoma;
+  font-size: 14px;
+  color: #000000;
+  background-color: none;
+  margin: 5px 5px 0 5px;
+}
+#block-soar-1 {
+  margin-bottom: 5px;
+}
+#colright .block ul {
+  padding: 0;
+  margin: 0;
+}
+#colright .block li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+}
+
+#block-soar-0 ul div {
+  padding: 0 0 0 10px;
+  text-indent: -10px;
+}
+
+/* Site Counter */
+.soarcounterimages {
+  text-align: right;
+  margin-right: 5px;
+}
+.soarcounterimages img {
+  height: 30px;
+}
+.soarcounterlabel {
+  display: none;
+}
+
+/* Upcoming Events */
+.block-soar,
+.block-event,
+.block-signup {
+  padding: 0;
+  margin: 0;
+}
+
+.block-event .item-list,
+.block-signup .item-list {
+  padding: 0;
+  margin: 0;
+}
+.block-event li,
+.block-signup li {
+  clear: both;
+  border-top: 1px solid #DFDFDF;
+}
+.block-signup li:first-child,
+.block-event li:first-child {
+  border-top: 0;
+}
+.block-event .event-timeleft,
+.block-signup .event-timeleft {
+  float: left;
+  padding: 6px 0 0 0;
+  margin: 0 0 0 0;
+  font-weight: bold;
+}
+.block-event .event-title,
+.block-signup .event-title {
+  clear: left;
+  margin-left: 15px;
+}
+.block-event .event-subunit,
+.block-signup .event-subunit {
+  float: right;
+  text-align: right;
+  max-width: 100px;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  margin: 6px 0 0 0;
+  padding: 0;
+  color: #FF0000;
+}
+.block-signup .event-restrict {
+  text-align: right;
+  font-size: 90%;
+}
+.block-event .clearleft,
+.block-signup .clearleft {
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+  
+
+/* ================================================================
+   MAIN PAGE CONTENT
+   ================================================================ */
+#content {
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  background-color: none;
+}
+#content h1.title,
+.term h2.title {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 18px;
+  color: #658017;
+}
+
+/* Home Page Announcement List */
+
+.node {
+  clear: left;
+  padding: 10px 10px 10px 10px;
+  margin: 0 0 10px 0;
+}
+
+.teaser {
+  background-color: #DFDFDF;
+}
+
+.teaser h2 {
+  margin: 0 0 2px 0;
+  padding: 0 0 2px 0;
+  font-family: Georgia;
+  font-size: 18px;
+  color: #658017;
+  background-color: #DFDFDF;
+  border-bottom: 1px solid #658017;
+}
+.teaser h2 a {
+  color: #658017;
+  border: 0;
+}
+
+/* Welcome Message */
+.sticky {
+  padding: 10px;
+  background-color: #CCCC99 !important;
+}
+.sticky h2 {
+  margin: 0;
+  font-family: Georgia;
+  font-size: 18px;
+  color: #658017;
+  background-color: #CCCC99 !important;
+  border-bottom: 1px solid #658017 !important;
+}
+.sticky h2 a {
+  color: #658017;
+  border-bottom: 0;
+}
+
+
+.node .info {
+  width: 360px;
+  font-size: 90%;
+  margin-top: 2px;
+  padding-bottom: 10px;
+}
+.node .filter {
+  text-align: right;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  color: #FF0000;
+}
+.node .filter a {
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  color: #FF0000;
+  border: 0;
+}
+.node .node-content {
+  clear: both;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.node .node-content img {
+  padding: 10px;
+}
+.node .links {
+  text-align: right;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+.node .links a {
+  font-size: 90%;
+  font-style: normal;
+}
+
+/* need to remove paragraph breaks before/after announcement body */
+/*
+.node .node-content .announcement p:first-child {
+  padding: 0;
+  margin: 0;
+}
+* 0 2px 0/
+
+/* Node in single Page display */
+#content h1 {
+  font-size: 120%;
+}
+
+/* Stop "Message:" from being displayed in Announcements */
+.flexinode-2 label {
+  display: none;
+}
+
+
+/* ================================================================
+   LINKS & FILES
+   ================================================================ */
+
+/* Admin Controls */
+
+.folderadd {
+  float: right;
+  width: 130px;
+  font-style: italic;
+  border: 1px solid black;
+  background: white;
+  padding: 8px;
+}
+.folderadd ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Folder details */
+.term-container {
+  float: left;
+}
+.term-container .term {
+  margin: 15px 0 30px 0;
+}
+/*
+.term-container .term h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 120%;
+}
+*/
+.term-container .term h2 a {
+  border: 0;
+  color: #658017;
+}
+.term-container .term .description {
+  margin: 0 0 0 50px;
+}
+
+/* Sub folders */
+.subterm {
+  clear: both;
+  min-height: 46px;
+  margin-top: 3px;
+  background-image: url(/images/folder.gif);
+  background-repeat: no-repeat;
+}
+.subterm .title {
+  font-size: 100%;
+  padding: 0 0 0 55px;
+  margin: 0 0 3px 0;
+}
+.subterm .description {
+  margin: 0 0 0 65px;
+}
+.term-end {
+  margin: 20px 0 0 0;
+}
+
+/* FILES */
+#soar_file {
+  min-height: 30px;
+  margin: 2px 0 0 10px;
+  padding: 0 0 0 38px;
+  background-image: url(/images/document.gif);
+  background-repeat: no-repeat;
+}
+
+/* LINKS */
+#soar_link {
+  min-height: 40px;
+  margin-top: 2px;
+  padding-left: 50px;
+  background-image: url(/images/link.png);
+  background-repeat: no-repeat;
+}
+
+
+/* ================================================================
+   PAGE FOOTER
+   ================================================================ */
+
+/* ================================================================
+   EVENTS
+   ================================================================ */
+
+/* color & no border for event subunit links */
+.node .terms {
+  margin: 6px 10px 0 0;
+  float: right;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  color: #FF0000;
+}
+.node .terms a {
+  border: 0;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  color: #FF0000;
+}
+
+/* Event List styles */
+.event-list {
+  padding-top: 20px;
+}
+.event-list table {
+  clear: right;
+}
+.event-list .title {
+  font-weight: bold;
+}
+.event-list .location {
+  text-align: right;
+  padding-right: 5px;
+}
+.event-list .eventunit {
+  text-align: right;
+  padding-right: 5px;
+}
+.event-list .date {
+  text-align: right;
+  padding-right: 5px;
+}
+.event-list .filter {
+  text-align: right;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  color: #FF0000;
+}
+.event-list .duration {
+  float: left;
+}
+.event-list .select {
+  float: right;
+}
+  
+
+/*  event calendar table styles  */
+
+/* Make sure Next/Prev links in Calender can be seen */
+.event-calendar,
+.event-list {
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+.event-calendar th a:link,
+.event-calendar th a:active,
+.event-calendar th a:visited,
+.event-calendar th a:hover {
+  border: none;
+}
+
 .event-calendar table {
-    border: 1px solid #658017;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin-bottom: 1em;
+  border: 1px solid #658017;
+  border-collapse: collapse; 
+  border-spacing: 0;
+  margin-bottom: 1em;
 }
-table {
-    border-collapse: collapse;
+.event-calendar tr {
+  padding: 0;
+  margin: 0;
+  background: #FFFFFF;
 }
-.event-calendar, .event-list {
-    font-family: Aerial;
-    font-size: 12px;
+.event-calendar th {
+  font-size: 110%;
+  font-weight: bold;
+  color: #658017;
+  background-color: #CCCC99;
+  text-align: center;
+  padding: 1px 0.33em;
+  border: 1px solid #658017;
 }
-body {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    font-weight: normal;
-    font-size: 14px;
-    color: #000000;
+.event-calendar td {
+  border: 1px solid #658017;
+  text-align: right;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+
+.event-calendar th.heading {
+  border-width: 1px 0px;
+}
+.event-calendar th.prev {
+  text-align: left;
+  border-width: 1px 0px 1px 1px;
+  background-color: #CCCC99;
+}
+.event-calendar th.next {
+  text-align: right;
+  border-width: 1px 1px 1px 0px;
+  background-color: #CCCC99;
+}
+.event-calendar th a {
+  font-weight: bold;
+  color: #658017;
+}
+/*
+.event-calendar td a {
+  color: #222244;
+  font-weight: bold;
+  text-decoration: none;
+}
+.event-calendar td a:hover {
+  text-decoration: underline;
+}
+*/
+.event-calendar td.sat, .event-calendar td.sun {
+  background: #E8E8E8;
+}
+/* MCK 20060629
+   Change TODAY color
+  background: #f99;
+*/
+.event-calendar td.today {
+  background: #FFFF00;
+}
+/* MCK 20060611
+  What is selected???
+.event-calendar td.selected {
+  background: #99f;
+}
+*/
+.event-calendar td.year, .event-calendar td.month {
+  text-align: center;
+  border-width: 1px 0px;
+}
+
+/*  days of the week header cells */
+.event-calendar td.days {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #658017;
+  border-width: 0 1px 1px 0;
+}
+/*MCK 20060611
+  added to make sure blank days in Day View actually have a box !
+*/
+.daybox {
+  height: 100px;
+}
+
+/*  floating day number div  */
+.event-calendar div.day {
+  float: right;
+  width: 15px;
+  text-align: center;
+  border: 1px solid #658017;
+  border-width: 0 0 1px 1px;
+  padding: 0.125em 0.25em 0 0.25em;
+  margin: 0;
+  background: #CCCC99;
+  font-weight: bold;
+}
+.event-calendar div.days a:link,
+.event-calendar div.days a:active,
+.event-calendar div.days a:visited,
+.event-calendar div.days a:hover {
+  color: #658017;
+}
+
+
+/*  event node times for the body */
+.event-nodeapi div {
+  padding: 0.5em 1em 0 0;
+}
+/* removed to make dark color backgrounds work
+.event-nodeapi div label { color: #999; }
+*/
+
+/*  individual node container  */
+.event-calendar div.event {
+  background-color: #fff;
+  border: solid 1px #555;
+  text-align: left;
+  margin: 0.25em 0 0.5em 0.25em;
+}
+.event-calendar div.title {
+  padding-left: 3px;
+}
+/*
+.event-calendar div.title a {
+  color: #000;
+}
+.event-calendar div.title a:hover {
+  color: #c00;
+}
+*/
+.event-calendar .content {
+  margin: 5px;
+  padding: 3px;
+  border-left: solid 2px #ddd;
+  padding-left: 5px;
+}
+.event-calendar div.type {
+  margin-left: 5px;
+/* 20090714
+  font-size: 0.8em;
+*/
+}
+
+/*
+.event-calendar div.type a {
+  color: #00c;
+}
+.event-calendar div.type a:hover {
+  color: #c00;
+}
+*/
+.event-calendar div.links {
+  padding-left: 3px;
+}
+.event-calendar div.links a {
+  color: #00c;
+}
+.event-calendar div.links a:hover {
+  color: #c00;
+}
+/*MCK 20060719 added for category display */
+.event-calendar .eventunit {
+  font-style: normal;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  color: #FF0000;
+  margin: 2px 0 2px 0;
+  padding-left: 3px;
+}
+.event-calendar .start {
+  font-style: normal;
+  color: #555;
+  margin: 2px 0 2px 0;
+  padding-left: 3px;
+/* 20090714
+  font-size: 0.8em;
+*/
+}
+.event-calendar .end {
+  font-style: normal;
+  color: #555;
+  margin: 2px 0 2px 0;
+  padding-left: 9px;
+/* 20090714
+  font-size: 0.8em;
+*/
+}
+.event-calendar .ongoing {
+  font-style: normal;
+  color: #555;
+  margin: 2px 0 2px 0;
+  padding-left: 9px;
+/* 20090714
+  font-size: 0.8em;
+*/
+}
+.event-calendar div.info {
+  visibility: hidden;
+  height: 0px;
+  overflow:hidden;
+  padding-left: 3px;
+}
+
+
+/*  individual node view styles  */
+.event-calendar div.monthview .title {
+/* 20090714
+  font-size: 0.8em;
+*/
+}
+.event-calendar div.dayview {
+  width: auto;
+}
+.event-calendar div.tableview {
+  width: auto;
+}
+.event-calendar div.tableview .links {
+}
+
+.event-calendar .event-empty {
+/*MCK 20060611
+  give blank days more length
+  min-height: 6em;
+*/
+  height: 50px;
+}
+.container-inline .day input {
+  width: auto;
+  display: inline;
+}
+
+/*  multi-day event top stripes  */
+.event-calendar .event .stripe {
+  height: 5px;
+}
+.event-calendar .event .stripe-1 {
+  background-color: #FF6;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-2 {
+  background-color: #F66;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-3 {
+  background-color: #668CFF;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-4 {
+  background-color: #FFB366;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-5 {
+  background-color: #85FF66;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-6 {
+  background-color: #A666FF;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-7 {
+  background-color: #FFE066;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-8 {
+  background-color: #66FFFF;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-9 {
+  background-color: #FF66D9;
+  height: 5px;
+  width: 100%;
+}
+.event-calendar .event .stripe-10 {
+  background-color: #DDD;
+  height: 5px;
+  width: 100%;
+}
+
+/* EVENT SIGNUP */
+.signup {
+  background-color: #CCCC99;
+}
+.signup .button {
+  font-family: Georgia;
+  font-weight: bold;
+}
+#icutoff {
+  border-bottom: 1px dotted #000000;
+}
+
+/*
+#block-event-1 .content .item-list ul li a:{ 
+  text-align: left;
+  margin: 0;
+  padding: 1px 1px 1px 10px;
+  display: block;
+}
+*/
+
+/*MCK 20060720 added */
+.event-subunit {
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: normal;
+  color: #FF0000;
+  display: block;
+  text-align: right;
+  padding-bottom: 3px;
+}
+
+/*
+span.event-timeleft {
+  padding-bottom: 3px;
+  text-align: left;
+}
+*/
+
+/*
+ * NOT USED ANYMORE?
+span.event-nodetype {
+  float: right;
+  padding: 0px 0px 0px 5px;
+  display: block;
+  width: auto;
+  text-align: right;
+}
+*/
+
+.ical-link {
+  text-align: right;
+}
+
+
+#block-logintoboggan-0 .item-list li {
+  margin: 7px 0 0 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/*MCK 20091202
+  make Event Registration notes field much smaller */
+#edit-notes {
+  min-height: 33px;
+}
+
+/* ================================================================
+   SPLASH PAGE
+   ================================================================ */
+
+.sbackground {
+  padding: 5px 5px 0px 15px;
+  margin: 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+#sheadtitle {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 28px;
+  font-variant: small-caps;
+  color: #658017;
+  height: 100px;
+  overflow: hidden;
+}
+#sheadpicleft {
+  margin: 0 40px 0 20px;
+  padding: 0;
+  overflow: hidden;
+}
+#sheadpicright {
+  margin: 0 20px 0 40px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#scontainer {
+  margin: 40px auto 40px auto;
+  padding: 0;
+  background-image: url();
+  background-color: #FFFFFF;
+  border: 1px solid #658017;
+  overflow: hidden;
+}
+#scolleft {
+  margin: 0px;
+  padding: 10px;
+}
+#scolleft .block .content {
+  background-color: #FFFFFF;
+}
+#scolleft .block {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Georgia;
+  color: #658017;
+  border: 1px solid SOAR_MENU_BORDER_COLOR;
+}
+#scolleft .block .title {
+  background-color: #658017;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: Georgia;
+}
+
+#shomepage {
+  width: 540px;
+  height: 380px;
+  overflow-y: scroll;
+}
+#shomepage .node {
+  width: 490px;
+}
+
+
+.imgnolink img,
+.imgnolink,
+a.imgnolink,
+a.imgnolink:hover,
+a.imgnolink:active,
+a.imgnolink:visited,
+a.imgnolink:link {
+  border: none !important;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
