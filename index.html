@@ -1,166 +1,231 @@
 <! DOCTYPE html> 
-2 <p></p> 
-3 <title>Calender</title> 
-4 <p></p> 
-5 
+ <p></p> 
+ <title>Calender</title> 
+ <p></p> 
  
-6 <tbody> 
-7 	<tr><td id="headertop" colspan="2"></td></tr> 
-8     <!-- PAGE CONTENT --> 
-9              
-10       <h1 class="title">Calendar</h1>       
-11       <div class="tabs"></div> 
-12 
  
-13       <!-- begin content --><div class="eventlinks"><a title="Week view" href="http://mundelein388.mytroop.us/event/2014/10/2/week/all/all"><img alt="Week" src="/images/cal-week.gif"></a> | <a title="Detail view" href="http://mundelein388.mytroop.us/event/2014/10/2/detail/all/all"><img alt="Detail" src="/images/cal-detail.gif"></a> | <a title="List view" href="http://mundelein388.mytroop.us/event/2014/10/2/list/all/all"><img alt="List" src="/images/cal-list.gif"></a> | <a title="Print View" href="http://mundelein388.mytroop.us/eventprint/2014/10/2/print/all/all"><img alt="Print" src="/images/cal-print.gif"></a> 
-14 	<style> 
-15         #caljump, 
-16 	.caljumpdiv, 
-17         .eventlinks { 
-18           display: inline; 
-19         } 
-20 	.eventlinks select { 
-21           font-size: 13px; 
-22           font-family: Arial; 
-23 	  margin-left: 4px; 
-24         } 
-25 	.eventlinks .cjsubmit { 
-26           font-size: 12px; 
-27           font-family: Arial; 
-28           padding: 0; 
-29           margin: 0 0 0 4px; 
-30         } 
-31         .caljumpdiv { 
-32           padding-left: 330px; 
-33         } 
-34 	</style> 
-35 <div class="caljumpdiv"><form id="caljump" action="/caljump" method="post"><input name="view" type="hidden" value="month"><select name="month" class="cjmonth"><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10" selected="">October</option><option value="11">November</option><option value="12">December</option></select><select name="year" class="cjmonth"><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014" selected="">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option></select><input name="Go" class="cjsubmit" type="submit" value="Go"></form></div><div class="event-calendar"><div class="month-view"><table> 
-36  <thead><tr><th class="prev"><a href="/event/2014/09/02/month/all/all">«</a></th><th class="heading" colspan="5">October 2014</th><th class="next"><a href="/event/2014/11/02/month/all/all">»</a></th> </tr></thead> 
-37 <tbody> 
-38  <tr class="odd"><td class="days sun">Sun</td><td class="days mon">Mon</td><td class="days tue">Tue</td><td class="days wed">Wed</td><td class="days thu">Thu</td><td class="days fri">Fri</td><td class="days sat">Sat</td> </tr> 
-39  <tr class="even"><td></td><td></td><td></td><td class="oct wed" id="oct1"><div class="day">1</div> 
-40 <div class="event-empty"></div> 
-41 </td><td class="oct thu selected" id="oct2"><div class="day">2</div> 
-42 <div class="event-empty"></div> 
-43 </td><td class="oct fri" id="oct3"><div class="day">3</div> 
-44 <div class="event-empty"></div> 
-45 </td><td class="oct sat" id="oct4"><div class="day">4</div> 
-46 <div class="event-empty"></div> 
-47 </td> </tr> 
-48  <tr class="odd"><td class="oct sun" id="oct5"><div class="day">5</div> 
-49 <div class="event-empty"></div> 
-50 </td><td class="oct mon" id="oct6"><div class="day">6</div> 
-51 <div class="event monthview"> 
-52 <div class="title"><a title="view this event" href="/node/3040">Troop Meeting</a></div> 
-53 <div class="eventunit">Cobra</div> 
-54 <div class="start">7:00 pm -&gt; 8:30 pm</div> 
-55 </div> 
-56 <div class="links"> 
-57 </div> 
-58 </td><td class="oct tue" id="oct7"><div class="day">7</div> 
-59 <div class="event-empty"></div> 
-60 </td><td class="oct wed" id="oct8"><div class="day">8</div> 
-61 <div class="event-empty"></div> 
-62 </td><td class="oct thu" id="oct9"><div class="day">9</div> 
-63 <div class="event-empty"></div> 
-64 </td><td class="oct fri" id="oct10"><div class="day">10</div> 
-65 <div class="event monthview"> 
-66 <div class="title"><a title="view this event" href="/node/2981">"Baden Powell" - Aptakisic District Camp-o-ree</a></div> 
-67 <div class="eventunit">Activity</div> 
-68 <div class="start">5:00 pm -&gt; </div> 
-69 <div class="links"> 
-70 </div></div> 
-71 </td><td class="oct sat" id="oct11"><div class="day">11</div> 
-72 <div class="event monthview"> 
-73 <div class="title"><a title="view this event" href="/node/2981">"Baden Powell" - Aptakisic District Camp-o-ree</a></div> 
-74 <div class="eventunit">Activity</div> 
-75 <div class="ongoing">all day</div> 
-76 <div class="links"> 
-77 </div></div> 
-78 </td> </tr> 
-79  <tr class="even"><td class="oct sun" id="oct12"><div class="day">12</div> 
-80 <div class="event monthview"> 
-81 <div class="title"><a title="view this event" href="/node/2981">"Baden Powell" - Aptakisic District Camp-o-ree</a></div> 
-82 <div class="eventunit">Activity</div> 
-83 <div class="end">-&gt; 11:00 am</div> 
-84 <div class="links"> 
-85 </div></div> 
-86 </td><td class="oct mon" id="oct13"><div class="day">13</div> 
-87 <div class="event monthview"> 
-88 <div class="title"><a title="view this event" href="/node/3110">Formal Court of Honor</a></div> 
-89 <div class="eventunit">Troop</div> 
-90 <div class="start">7:00 pm -&gt; 8:30 pm</div> 
-91 </div> 
-92 <div class="links"> 
-93 </div> 
-94 </td><td class="oct tue" id="oct14"><div class="day">14</div> 
-95 <div class="event-empty"></div> 
-96 </td><td class="oct wed" id="oct15"><div class="day">15</div> 
-97 <div class="event-empty"></div> 
-98 </td><td class="oct thu" id="oct16"><div class="day">16</div> 
-99 <div class="event-empty"></div> 
-100 </td><td class="oct fri" id="oct17"><div class="day">17</div> 
-101 <div class="event-empty"></div> 
-102 </td><td class="oct sat" id="oct18"><div class="day">18</div> 
-103 <div class="event-empty"></div> 
-104 </td> </tr> 
-105  <tr class="odd"><td class="oct sun" id="oct19"><div class="day">19</div> 
-106 <div class="event-empty"></div> 
-107 </td><td class="oct mon" id="oct20"><div class="day">20</div> 
-108 <div class="event monthview"> 
-109 <div class="title"><a title="view this event" href="/node/3053">Troop Meeting</a></div> 
-110 <div class="eventunit">Cobra</div> 
-111 <div class="start">7:00 pm -&gt; 8:30 pm</div> 
-112 </div> 
-113 <div class="links"> 
-114 </div> 
-115 </td><td class="oct tue" id="oct21"><div class="day">21</div> 
-116 <div class="event-empty"></div> 
-117 </td><td class="oct wed today" id="oct22"><div class="day">22</div> 
-118 <div class="event-empty"></div> 
-119 </td><td class="oct thu" id="oct23"><div class="day">23</div> 
-120 <div class="event-empty"></div> 
-121 </td><td class="oct fri" id="oct24"><div class="day">24</div> 
-122 <div class="event-empty"></div> 
-123 </td><td class="oct sat" id="oct25"><div class="day">25</div> 
-124 <div class="event-empty"></div> 
-125 </td> </tr> 
-126  <tr class="even"><td class="oct sun" id="oct26"><div class="day">26</div> 
-127 <div class="event-empty"></div> 
-128 </td><td class="oct mon" id="oct27"><div class="day">27</div> 
-129 <div class="event monthview"> 
-130 <div class="title"><a title="view this event" href="/node/3056">PLC Meeting</a></div> 
-131 <div class="eventunit">PLC</div> 
-132 <div class="start">7:00 pm -&gt; 8:00 pm</div> 
-133 </div> 
-134 <div class="links"> 
-135 </div> 
-136 <div class="event monthview"> 
-137 <div class="title"><a title="view this event" href="/node/3057">Troop Committee Meeting</a></div> 
-138 <div class="eventunit">Troop Committee</div> 
-139 <div class="start">8:00 pm -&gt; 9:00 pm</div> 
-140 </div> 
-141 <div class="links"> 
-142 </div> 
-143 </td><td class="oct tue" id="oct28"><div class="day">28</div> 
-144 <div class="event-empty"></div> 
-145 </td><td class="oct wed" id="oct29"><div class="day">29</div> 
-146 <div class="event-empty"></div> 
-147 </td><td class="oct thu" id="oct30"><div class="day">30</div> 
-148 <div class="event-empty"></div> 
-149 </td><td class="oct fri" id="oct31"><div class="day">31</div> 
-150 <div class="event-empty"></div> 
-151 </td><td>&nbsp;</td> </tr> 
-152 </tbody></table> 
-153 </div></div> 
-154 <!-- end content -->    </div></td> 
-155     </tr> 
-156 		 
-157     <!-- PAGE FOOTER --> 
-158     <tr><td id="footer" colspan="2"> 
-159        
-160     </td><tr> 
-161 
+ <tbody> 
+ 	<tr><td id="headertop" colspan="2"></td></tr> 
+     <!-- PAGE CONTENT --> 
+              
+       <h1 class="title">Calendar</h1>       
+       <div class="tabs"></div> 
  
-162      
-163   </tr> 
+<div class="eventlinks"><a title="Week view" href="http://mundelein388.mytroop.us/event/2014/10/2/week/all/all"><img alt="Week" src="/images/cal-week.gif"></a> | <a title="Detail view" href="http://mundelein388.mytroop.us/event/2014/10/2/detail/all/all"><img alt="Detail" src="/images/cal-detail.gif"></a> | <a title="List view" href="http://mundelein388.mytroop.us/event/2014/10/2/list/all/all"><img alt="List" src="/images/cal-list.gif"></a> | <a title="Print View" href="http://mundelein388.mytroop.us/eventprint/2014/10/2/print/all/all"><img alt="Print" src="/images/cal-print.gif"></a>
+	<style>
+        #caljump,
+	.caljumpdiv,
+        .eventlinks {
+          display: inline;
+        }
+	.eventlinks select {
+          font-size: 13px;
+          font-family: Arial;
+	  margin-left: 4px;
+        }
+	.eventlinks .cjsubmit {
+          font-size: 12px;
+          font-family: Arial;
+          padding: 0;
+          margin: 0 0 0 4px;
+        }
+        .caljumpdiv {
+          padding-left: 330px;
+        }
+	</style>
+<div class="caljumpdiv">
+	<form id="caljump" action="/caljump" method="post">
+		<input name="view" type="hidden" value="month">
+		<select name="month" class="cjmonth">
+			<option value="1">January</option>
+			<option value="2">February</option>
+			<option value="3">March</option>
+			<option value="4">April</option>
+			<option value="5">May</option>
+			<option value="6">June</option>
+			<option value="7">July</option>
+			<option value="8">August</option>
+			<option value="9">September</option>
+			<option value="10" selected="">October</option>
+			<option value="11">November</option>
+			<option value="12">December</option>
+		</select><select name="year" class="cjmonth">
+			<option value="2010">2010</option>
+			<option value="2011">2011</option>
+			<option value="2012">2012</option>
+			<option value="2013">2013</option>
+			<option value="2014" selected="">2014</option>
+			<option value="2015">2015</option>
+			<option value="2016">2016</option>
+			<option value="2017">2017</option>
+			<option value="2018">2018</option>
+		</select>
+		<input name="Go" class="cjsubmit" type="submit" value="Go">
+	</form>
+</div>
+<div class="event-calendar">
+	<div class="month-view">
+		<table>
+ 			<thead>
+ 				<tr>
+ 					<th class="prev">
+ 						<a href="/event/2014/09/02/month/all/all">«</a>
+ 					</th>
+ 					<th class="prev">
+ 						<a href="/event/2014/09/02/month/all/all">«</a>
+ 					</th>
+ 					<th class="heading" colspan="5">October 2014</th>
+ 					<th class="next"><a href="/event/2014/11/02/month/all/all">»</a></th>
+ 				</tr>
+ 			</thead>
+			<tbody>
+ 				<tr class="odd">
+ 					<td class="days sun">Sun</td>
+ 					<td class="days mon">Mon</td>
+ 					<td class="days tue">Tue</td>
+ 					<td class="days wed">Wed</td>
+ 					<td class="days thu">Thu</td>
+ 					<td class="days fri">Fri</td>
+ 					<td class="days sat">Sat</td>
+ 				</tr>
+ 				<tr class="even">
+ 					<td></td>
+ 					<td></td>
+ 					<td></td>
+ 					<td class="oct wed" id="oct1">
+ 						<div class="day">1</div>
+						<div class="event-empty"></div>
+					</td>
+					<td class="oct thu selected" id="oct2">
+						<div class="day">2</div>
+						<div class="event-empty"></div>
+					</td>
+					<td class="oct fri" id="oct3">
+						<div class="day">3</div>
+						<div class="event-empty"></div>
+					</td>
+					<td class="oct sat" id="oct4">
+						<div class="day">4</div>
+						<div class="event-empty"></div>
+					</td>
+				</tr>
+				<tr class="odd">
+					<td class="oct sun" id="oct5">
+						<div class="day">5</div>
+						<div class="event-empty"></div>
+					</td>
+					<td class="oct mon" id="oct6">
+						<div class="day">6</div>
+						<div class="event monthview">
+							<div class="title">
+								<a title="view this event" href="/node/3040">Troop Meeting</a>
+							</div>
+							<div class="eventunit">Cobra</div>
+							<div class="start">7:00 pm -&gt; 8:30 pm</div>
+						</div>
+						<div class="links"></div>
+					</td>
+					<td class="oct tue" id="oct7">
+						<div class="day">7</div>
+						<div class="event-empty"></div>
+					</td>
+					<td class="oct wed" id="oct8">
+						<div class="day">8</div>
+						<div class="event-empty"></div>
+					</td>
+				<td class="oct thu" id="oct9">
+					<div class="day">9</div>
+					<div class="event-empty"></div>
+				</td>
+				<td class="oct fri" id="oct10">
+					<div class="day">10</div>
+					<div class="event monthview">
+<div class="title"><a title="view this event" href="/node/2981">"Baden Powell" - Aptakisic District Camp-o-ree</a></div>
+<div class="eventunit">Activity</div>
+<div class="start">5:00 pm -&gt; </div>
+<div class="links">
+</div></div>
+</td><td class="oct sat" id="oct11"><div class="day">11</div>
+<div class="event monthview">
+<div class="title"><a title="view this event" href="/node/2981">"Baden Powell" - Aptakisic District Camp-o-ree</a></div>
+<div class="eventunit">Activity</div>
+<div class="ongoing">all day</div>
+<div class="links">
+</div></div>
+</td> </tr>
+ <tr class="even"><td class="oct sun" id="oct12"><div class="day">12</div>
+<div class="event monthview">
+<div class="title"><a title="view this event" href="/node/2981">"Baden Powell" - Aptakisic District Camp-o-ree</a></div>
+<div class="eventunit">Activity</div>
+<div class="end">-&gt; 11:00 am</div>
+<div class="links">
+</div></div>
+</td><td class="oct mon" id="oct13"><div class="day">13</div>
+<div class="event monthview">
+<div class="title"><a title="view this event" href="/node/3110">Formal Court of Honor</a></div>
+<div class="eventunit">Troop</div>
+<div class="start">7:00 pm -&gt; 8:30 pm</div>
+</div>
+<div class="links">
+</div>
+</td><td class="oct tue" id="oct14"><div class="day">14</div>
+<div class="event-empty"></div>
+</td><td class="oct wed" id="oct15"><div class="day">15</div>
+<div class="event-empty"></div>
+</td><td class="oct thu" id="oct16"><div class="day">16</div>
+<div class="event-empty"></div>
+</td><td class="oct fri" id="oct17"><div class="day">17</div>
+<div class="event-empty"></div>
+</td><td class="oct sat" id="oct18"><div class="day">18</div>
+<div class="event-empty"></div>
+</td> </tr>
+ <tr class="odd"><td class="oct sun" id="oct19"><div class="day">19</div>
+<div class="event-empty"></div>
+</td><td class="oct mon" id="oct20"><div class="day">20</div>
+<div class="event monthview">
+<div class="title"><a title="view this event" href="/node/3053">Troop Meeting</a></div>
+<div class="eventunit">Cobra</div>
+<div class="start">7:00 pm -&gt; 8:30 pm</div>
+</div>
+<div class="links">
+</div>
+</td><td class="oct tue" id="oct21"><div class="day">21</div>
+<div class="event-empty"></div>
+</td><td class="oct wed today" id="oct22"><div class="day">22</div>
+<div class="event-empty"></div>
+</td><td class="oct thu" id="oct23"><div class="day">23</div>
+<div class="event-empty"></div>
+</td><td class="oct fri" id="oct24"><div class="day">24</div>
+<div class="event-empty"></div>
+</td><td class="oct sat" id="oct25"><div class="day">25</div>
+<div class="event-empty"></div>
+</td> </tr>
+ <tr class="even"><td class="oct sun" id="oct26"><div class="day">26</div>
+<div class="event-empty"></div>
+</td><td class="oct mon" id="oct27"><div class="day">27</div>
+<div class="event monthview">
+<div class="title"><a title="view this event" href="/node/3056">PLC Meeting</a></div>
+<div class="eventunit">PLC</div>
+<div class="start">7:00 pm -&gt; 8:00 pm</div>
+</div>
+<div class="links">
+</div>
+<div class="event monthview">
+<div class="title"><a title="view this event" href="/node/3057">Troop Committee Meeting</a></div>
+<div class="eventunit">Troop Committee</div>
+<div class="start">8:00 pm -&gt; 9:00 pm</div>
+</div>
+<div class="links">
+</div>
+</td><td class="oct tue" id="oct28"><div class="day">28</div>
+<div class="event-empty"></div>
+</td><td class="oct wed" id="oct29"><div class="day">29</div>
+<div class="event-empty"></div>
+</td><td class="oct thu" id="oct30"><div class="day">30</div>
+<div class="event-empty"></div>
+</td><td class="oct fri" id="oct31"><div class="day">31</div>
+<div class="event-empty"></div>
+</td><td>&nbsp;</td> </tr>
+</tbody></table>
+</div></div>
+<!-- end content -->    
