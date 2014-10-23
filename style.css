@@ -9,5 +9,15 @@
 }
 
 day {
- box-size:50px;
+ size:50px;
+}
+
+body {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
 }
