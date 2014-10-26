@@ -84,3 +84,6 @@ body {
  #wrap { 
  	margin: 10px; 
  } 
+li {
+    font-family:Aerial;
+}
