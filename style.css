@@ -19,7 +19,8 @@ body {
  
  html { 
      display: table; 
-     margin: auto; 
+     margin: auto;
+     font-family:Sans serif;
  } 
  
  
@@ -84,6 +85,3 @@ body {
  #wrap { 
  	margin: 10px; 
  } 
-li {
-    font-family:Aerial;
-}
