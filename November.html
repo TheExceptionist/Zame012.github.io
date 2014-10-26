@@ -15,7 +15,7 @@
 
 
 		<link rel="stylesheet" href="style.css"> 
-
+<!-- Makes a table for the dates -->
 <div class="event-calendar"> 
  	<div class="month-view"> 
  		<table> 
@@ -26,7 +26,7 @@
   					</th>
   				</tr> 
   			</thead> 
-
+<!-- HWat each day on the table will say -->
 				<tr class="odd"> 
 					<td class="days Sun">Sun</td> 
 					<td class="days Mon">Mon</td> 
@@ -36,6 +36,7 @@
 					<td class="days Fri">Fri</td> 
 					<td class="days Sat">Sat</td> 
 				</tr> 
+				<!-- Starts the first day of the month by skipping Monday to Friday and starting on Saturday -->
 				<tr class="even"> 
 					<td></td> 
 					<td></td> 
@@ -74,15 +75,27 @@
 						<div class="event-empty"></div> 
 					</td>
 					<td class="Nov Sat" id="Nov8"> 
-						<div class="day">8</div> 
-						<div class="event monthview"></div>
-							
+						<div class="day">8</div>
+							<div class="event monthview">
+								<div class="title">
+								<!-- Unknown yet for where it may take us for info-->
+									<a title="view this event" href= ""</a> Code Day</a>
+								</div>
+								<div class="eventunit">Club</div>
+								<div class="start">12pm - 12am</div>
+							</div>
 					</td>
 				</tr>
 				<tr class="even">
 					<td class="Nov Sun" id="Nov9"> 
 						<div class="day">9</div> 
-						<div class="event-empty"></div> 
+							<div class="event monthview">
+								<div class="title">
+									<a title="view this event" href="">Code Day</a>
+								</div>
+								<div class="eventunit">Club</div>
+								<div class="start">12am - 12pm</div>
+							</div>
 					</td> 
 					<td class="Nov Mon" id="Nov10"> 
 						<div class="day">10</div> 
