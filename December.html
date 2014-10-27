@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">  
+   	<head>  
+     		<!-- Meta tags. Specify text-encoding, site info, site size -->  
+         	<meta charset="utf-8">  
+         	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+         	<meta name="description" content="Mundelein High School Byte Club Website">  
+         	<meta name="keywords" content="Mundelein,High,School,Programming,Byte,Club,Farmer,Rouvinov,Cygnus,Palacios">  
+         	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	</head>
+
+	<p></p> 
+ 	<title>MHS Byte Club November Calender</title> 
+ 	<p></p>  
+
+
+		<link rel="stylesheet" href="style.css"> 
+<!-- Makes a table for the dates -->
+       <h1 class="title">Calendar</h1>        
+        <div class="tabs"></div>  
+   
+ 	<style> 
+         #caljump, 
+ 	.caljumpdiv, 
+         .eventlinks { 
+           display: inline; 
+         } 
+ 	.eventlinks select { 
+           font-size: 13px; 
+           font-family: Arial; 
+ 	  margin-left: 4px; 
+         } 
+ 	.eventlinks .cjsubmit { 
+           font-size: 12px; 
+           font-family: Arial; 
+           padding: 0; 
+           margin: 0 0 0 4px; 
+         } 
+         .caljumpdiv { 
+           padding-left: 330px; 
+         } 
+ 	</style> 
+
+<div class="event-calendar"> 
+ 	<div class="month-view"> 
+ 		<table> 
+  			<thead> 
+  				<tr> 
+  					<th class="prev"> 
+  						<a href="index.html">Previous</a> 
+  					</th>
+  				</tr> 
+  			</thead> 
+<!-- HWat each day on the table will say -->
+				<tr class="odd"> 
+					<td class="days Sun">Sun</td> 
+					<td class="days Mon">Mon</td> 
+					<td class="days Tue">Tue</td> 
+					<td class="days Wed">Wed</td> 
+					<td class="days Thu">Thu</td> 
+					<td class="days Fri">Fri</td> 
+					<td class="days Sat">Sat</td> 
+				</tr> 
+				<!-- Starts the first day of the month by skipping Monday to Friday and starting on Saturday -->
+				<tr class="even"> 
+					<td class="Dec Mon" id="Dec1"> 
+						<div class="day">1</div>
+						<div class="event-empty"></div> 
+					</td>
+					<td class="Dec Tue" id="Dec2"> 
+						<div class="day">2</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Wed" id="Dec3"> 
+						<div class="day">3</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Thu" id="Dec4"> 
+						<div class="day">4</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Fri" id="Dec5"> 
+						<div class="day">5</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Sat" id="Dec6"> 
+						<div class="day">6</div> 
+						<div class="event-empty"</div>
+					</td>
+				</tr>
+				<tr class="even">
+					<td class="Dec Sun" id="Dec7"> 
+						<div class="day">7</div> 
+						<div class="event-empty"></div> 
+					</td>
+					<td class="Dec Mon" id="Dec8"> 
+						<div class="day">8</div>
+						<div class="event-empty"></div>
+					</td>
+					<td class="Dec Tue" id="Dec9"> 
+						<div class="day">9</div> 
+						<div class="event-empty">
+					</td> 
+					<td class="Dec Wed" id="Dec10"> 
+						<div class="day">10</div> 
+						<div class="empty-event"></div> 
+						</div>	 
+					</td> 
+					<td class="Dec Thu" id="Dec11"> 
+						<div class="day">11</div> 
+						<div class="empty-event"></div> 
+					</td> 
+					<td class="Dec Fri" id="Dec12"> 
+						<div class="day">12</div> 
+						<div class="empty-event"></div> 
+					</td> 
+					<td class="Dec Sat" id="Dec13"> 
+						<div class="day">13</div> 
+						<div class="empty-event"></div> 
+					</td>
+				</tr>
+				</tr class="odd">
+					<td class="Dec Sun" id="Dec14"> 
+						<div class="day">14</div> 
+						<div class="event-empty"></div> 
+					</td>
+					<td class="Dec Mon" id="Dec15"> 
+						<div class="day">15</div> 
+						<div class="event-empty"></div> 
+					</td>
+					<td class="Dec Tue" id="Dec16"> 
+						<div class="day">16</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Wed" id="Dec17"> 
+						<div class="day">17</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Thu" id="Dec18"> 
+						<div class="day">18</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Fri" id="Dec19"> 
+						<div class="day">19</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Nov Sat" id="Dec20"> 
+						<div class="day">20</div> 
+						<div class="empty=-event"></div> 
+					</td>
+				</tr>
+				<tr class="even">
+					<td class="Dec Sun" id="Dec21"> 
+						<div class="day">21</div> 
+					<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Mon" id="Dec22"> 
+						<div class="day">221</div> 
+						<div class="event-empty"></div> 
+					</td>
+					<td class="Dec Tue" id="Dec23"> 
+						<div class="day">23</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Wed" id="Dec24"> 
+						<div class="day">24</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Thu" id="Dec25"> 
+						<div class="day">25</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Fri" id="Dec26"> 
+						<div class="day">26</div> 
+						<div class="event-empty"></div> 
+					</td> 
+					<td class="Dec Fri" id="Dec27"> 
+						<div class="day">27</div> 
+						<div class="empty-event"></div> 
+					</td> 
+					<td class="Dec Sat" id="Dec28"> 
+						<div class="day">28</div> 
+						<div class="event-empty"></div> 
+					</td>
+				</tr>
+				<tr class="odd">
+					<td class="Dec Sun" id="Dec29"> 
+						<div class="day">29</div> 
+						<div class="event-empty"></div> 
+					</td>
+					<td class="Dec Mon" id="Dec30">
+						<div class="day">30</div> 
+						<div class="event-empty"></div>
+					</td>
+					<td class="Dec Tue" id="Dec31">
+						<div class="day>31</div>
+						<div class="empty-event"></div>
+					</td>
+					<td>&nbsp;</td> 
+				</tr> 
+			</tbody> 
+		</table> 
+	 </div>
+</div>
+</html>
