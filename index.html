@@ -40,17 +40,13 @@
           padding-left: 330px;
         }
 	</style>
-<div class="caljumpdiv">
-	<form id="caljump" action="/caljump" method="post">
-		<input name="view" type="hidden" value="month">
-		<select name="month" class="cjmonth">
-			<option value="index.html" selected="">October</option>
-			<option value="November.html">November</option>
-			<option value="December.html">December</option>
-		</select>
-		<input name="Go" type="Button" Value="Go" onclick=NavigatetoSite()></form>
-	</form>
-</div>
+<form name="menuform">
+	<select name="menu2" onChange="top.location.href = this.form.menu2.options[this.form.menu2.selectedIndex].value; return false;">
+		<option value="/index.html" selected>October</option>
+		<option value="/November.html">November</option>
+		<option value="/December.html">December</option>
+	</select>
+</form>
 <div class="event-calendar">
 	<div class="month-view">
 		<table>
