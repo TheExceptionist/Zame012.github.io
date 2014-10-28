@@ -40,11 +40,17 @@
           padding-left: 330px;
         }
 	</style>
-<select name="month" class="cjmonth">
-	<option value="1" selected="">October</option>
-	<option value="2">November</option>
-	<option value="3">December</option>
-</select>
+<div class="caljumpdiv">
+	<form id="caljump" action="/caljump" method="post">
+		<input name="view" type="hidden" value="month">
+		<select name="month" class="cjmonth">
+			<option value="1" selected="">October</option>
+			<option value="2">November</option>
+			<option value="3">December</option>
+		</select>
+		<input name="Go" class="cjsubmit" type="submit" value="Go"></form>
+	</form>
+</div>
 <div class="event-calendar">
 	<div class="month-view">
 		<table>
