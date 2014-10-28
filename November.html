@@ -41,18 +41,17 @@
          } 
  	</style> 
 
+<form name="menuform">
+	<select name="menu2" onChange="top.location.href = this.form.menu2.options[this.form.menu2.selectedIndex].value; return false;">
+		<option value="/index.html" selected>October</option>
+		<option value="/November.html">November</option>
+		<option value="/December.html">December</option>
+	</select>
+</form>
+
 <div class="event-calendar"> 
  	<div class="month-view"> 
- 		<table> 
-  			<thead> 
-  				<tr> 
-  					<th class="prev"> 
-  						<a href="index.html">Previous</a> 
-  					</th>
-  					<th class="next">
-  						<a href="December.html">Next</a>
-  				</tr> 
-  			</thead> 
+ 		<table>
 <!-- HWat each day on the table will say -->
 				<tr class="odd"> 
 					<td class="days Sun">Sun</td> 
